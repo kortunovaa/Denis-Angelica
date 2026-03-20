@@ -70,7 +70,7 @@ body {
   box-shadow: 0 25px 40px -15px rgba(0, 0, 0, 0.2);
 }
 
-/* === ПЕРВЫЙ БЛОК С ФОТО - УВЕЛИЧЕН ШРИФТ === */
+/* === ПЕРВЫЙ БЛОК С ФОТО - ЕЩЕ БОЛЬШЕ УВЕЛИЧЕН ШРИФТ === */
 .first-block {
   background: transparent;
   justify-content: center;
@@ -117,9 +117,9 @@ body {
   pointer-events: none;
 }
 
-/* УВЕЛИЧЕН ШРИФТ */
+/* ШРИФТ ЕЩЕ БОЛЬШЕ УВЕЛИЧЕН */
 .photo-text-overlay h1 {
-  font-size: clamp(2rem, 8vw, 3.5rem);
+  font-size: clamp(2.5rem, 10vw, 4.5rem);
   margin-bottom: 0.5rem;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
   color: #fff;
@@ -127,7 +127,7 @@ body {
 }
 
 .photo-text-overlay .date-large {
-  font-size: clamp(1.4rem, 5vw, 2rem);
+  font-size: clamp(1.8rem, 6vw, 2.5rem);
   border-top: 1px solid rgba(255, 255, 255, 0.8);
   padding-top: 0.6rem;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
@@ -155,7 +155,7 @@ body {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-/* === БЛОК "ПОЖЕЛАНИЯ ПО ПОДАРКАМ" - ТЕКСТ ЧЕРНЫЙ, ФОН НАСЫЩЕННЕЕ === */
+/* === БЛОК "ПОЖЕЛАНИЯ ПО ПОДАРКАМ" === */
 .gifts-content {
   text-align: center;
   background: rgba(255, 255, 255, 0.7);
@@ -224,6 +224,36 @@ body {
   font-weight: 500;
 }
 
+/* === ТАЙМЕР - УВЕЛИЧЕН ШРИФТ В 1.5 РАЗА === */
+.countdown-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.countdown-item {
+  text-align: center;
+  min-width: 95px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.8rem;
+  border-radius: 12px;
+}
+
+.countdown-number {
+  font-size: clamp(2.4rem, 9vw, 6rem);
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom: 0.3rem;
+}
+
+.countdown-label {
+  font-size: clamp(1rem, 4vw, 1.5rem);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
 /* === ТИПОГРАФИКА === */
 .invitation-title,
 .schedule-main-title,
@@ -236,14 +266,12 @@ body {
 .calendar-day,
 .place-address,
 .dresscode-text,
-.countdown-label,
 .contact-name {
   color: #4a4a4a;
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
 }
 
-.schedule-time,
-.countdown-number {
+.schedule-time {
   color: #d45e6c;
   text-shadow: 0 0 15px rgba(212, 94, 108, 0.3);
 }
@@ -342,37 +370,7 @@ body {
   visibility: hidden;
 }
 
-/* === ТАЙМЕР === */
-.countdown-container {
-  display: flex;
-  justify-content: center;
-  gap: 0.8rem;
-  margin-top: 1.5rem;
-  flex-wrap: wrap;
-}
-
-.countdown-item {
-  text-align: center;
-  min-width: 65px;
-  background: rgba(255, 255, 255, 0.2);
-  padding: 0.5rem;
-  border-radius: 12px;
-}
-
-.countdown-number {
-  font-size: clamp(1.6rem, 6vw, 4rem);
-  font-weight: 600;
-  line-height: 1;
-  margin-bottom: 0.2rem;
-}
-
-.countdown-label {
-  font-size: clamp(0.7rem, 3vw, 1rem);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-/* === РАСПИСАНИЕ - ТЕКСТ 2/3, ИКОНКИ ВЕРТИКАЛЬНО === */
+/* === РАСПИСАНИЕ - ФОТОГРАФИИ БОЛЬШЕ, КАЖДАЯ В СВОЕЙ СТРОКЕ === */
 .schedule-main-title {
   font-size: clamp(1.8rem, 6vw, 3rem);
   font-weight: 400;
@@ -452,19 +450,22 @@ body {
   width: 34%;
 }
 
+/* ФОТОГРАФИИ БОЛЬШЕ, КАЖДАЯ В СВОЕЙ СТРОКЕ */
 .schedule-icon {
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   overflow: hidden;
-  border: 2px solid rgba(255, 255, 255, 0.6);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  border: 3px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
   flex-shrink: 0;
+  margin: 0.5rem 0;
 }
 
 .schedule-icon:hover {
-  transform: scale(1.05);
+  transform: scale(1.08);
+  border-color: #d45e6c;
 }
 
 .schedule-icon-img {
@@ -526,7 +527,7 @@ body {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* === МЕСТО ПРОВЕДЕНИЯ - ФОТО И КАРТА В ОДНОЙ СТРОКЕ === */
+/* === МЕСТО ПРОВЕДЕНИЯ - ФОТО И КАРТА БОЛЬШЕ, В ОДНОЙ СТРОКЕ === */
 .place-block-container {
   max-width: 1100px;
   width: 100%;
@@ -546,7 +547,7 @@ body {
 .place-content {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  gap: 1.2rem;
   margin-bottom: 1rem;
   justify-content: center;
   align-items: center;
@@ -561,7 +562,7 @@ body {
 
 .place-image-frame {
   width: 100%;
-  max-width: 200px;
+  max-width: 260px;
   aspect-ratio: 1/1;
   background-image: url('https://i.pinimg.com/1200x/17/5c/45/175c451b1b843a6b59d1beb498bdeaaf.jpg');
   background-size: cover;
@@ -580,7 +581,7 @@ body {
 
 .map-link {
   width: 100%;
-  max-width: 200px;
+  max-width: 260px;
   display: block;
   text-decoration: none;
 }
@@ -766,15 +767,33 @@ body {
   }
   
   .photo-text-overlay h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     letter-spacing: 2px;
   }
   
   .photo-text-overlay .date-large {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
   
-  /* Расписание на мобильных - текст 2/3, иконки вертикально */
+  /* Таймер на мобильных */
+  .countdown-container {
+    gap: 0.8rem;
+  }
+  
+  .countdown-item {
+    min-width: 70px;
+    padding: 0.5rem;
+  }
+  
+  .countdown-number {
+    font-size: 1.8rem;
+  }
+  
+  .countdown-label {
+    font-size: 0.8rem;
+  }
+  
+  /* Расписание на мобильных - иконки крупнее, в своих строках */
   .schedule-container {
     flex-direction: row;
     padding: 1rem;
@@ -784,18 +803,19 @@ body {
   .schedule-left {
     flex: 2;
     padding-right: 0.8rem;
-    width: 65%;
+    width: 60%;
   }
   
   .schedule-right {
     flex: 1;
     gap: 0.8rem;
-    width: 35%;
+    width: 40%;
   }
   
   .schedule-icon {
-    width: 55px;
-    height: 55px;
+    width: 85px;
+    height: 85px;
+    margin: 0.3rem 0;
   }
   
   .schedule-time {
@@ -810,7 +830,7 @@ body {
     font-size: 0.75rem;
   }
   
-  /* Место проведения - фото и карта в строке, уменьшенные */
+  /* Место проведения - фото и карта в строке, чуть меньше */
   .place-content {
     flex-direction: row;
     gap: 0.8rem;
@@ -818,25 +838,12 @@ body {
   
   .place-image-frame,
   .map-image {
-    max-width: 130px;
+    max-width: 180px;
   }
   
   .color-circle {
     width: 40px;
     height: 40px;
-  }
-  
-  .countdown-item {
-    min-width: 55px;
-    padding: 0.3rem;
-  }
-  
-  .countdown-number {
-    font-size: 1.3rem;
-  }
-  
-  .countdown-label {
-    font-size: 0.6rem;
   }
   
   .gift-option {
@@ -853,8 +860,8 @@ body {
 
 @media (max-width: 480px) {
   .schedule-icon {
-    width: 45px;
-    height: 45px;
+    width: 70px;
+    height: 70px;
   }
   
   .schedule-time {
@@ -871,7 +878,7 @@ body {
   
   .place-image-frame,
   .map-image {
-    max-width: 110px;
+    max-width: 140px;
   }
   
   .color-circle {
@@ -894,35 +901,47 @@ body {
   }
   
   .photo-text-overlay h1 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
   
   .photo-text-overlay .date-large {
-    font-size: 1rem;
+    font-size: 1.1rem;
+  }
+  
+  .countdown-item {
+    min-width: 60px;
+  }
+  
+  .countdown-number {
+    font-size: 1.5rem;
+  }
+  
+  .countdown-label {
+    font-size: 0.7rem;
   }
 }
 
 /* Для очень маленьких экранов */
 @media (max-width: 380px) {
   .schedule-icon {
-    width: 40px;
-    height: 40px;
-  }
-  
-  .countdown-item {
-    min-width: 48px;
-  }
-  
-  .countdown-number {
-    font-size: 1.1rem;
+    width: 60px;
+    height: 60px;
   }
   
   .place-image-frame,
   .map-image {
-    max-width: 95px;
+    max-width: 115px;
   }
   
   .photo-text-overlay h1 {
+    font-size: 1.4rem;
+  }
+  
+  .countdown-item {
+    min-width: 52px;
+  }
+  
+  .countdown-number {
     font-size: 1.3rem;
   }
 }
