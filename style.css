@@ -70,7 +70,7 @@ body {
   box-shadow: 0 25px 40px -15px rgba(0, 0, 0, 0.2);
 }
 
-/* === ПЕРВЫЙ БЛОК С ФОТО - ЕЩЕ БОЛЬШЕ УВЕЛИЧЕН ШРИФТ === */
+/* === ПЕРВЫЙ БЛОК С ФОТО - УВЕЛИЧЕН ШРИФТ === */
 .first-block {
   background: transparent;
   justify-content: center;
@@ -117,7 +117,6 @@ body {
   pointer-events: none;
 }
 
-/* ШРИФТ ЕЩЕ БОЛЬШЕ УВЕЛИЧЕН */
 .photo-text-overlay h1 {
   font-size: clamp(2.5rem, 10vw, 4.5rem);
   margin-bottom: 0.5rem;
@@ -224,7 +223,7 @@ body {
   font-weight: 500;
 }
 
-/* === ТАЙМЕР - УВЕЛИЧЕН ШРИФТ В 1.5 РАЗА === */
+/* === ТАЙМЕР - УВЕЛИЧЕН ШРИФТ === */
 .countdown-container {
   display: flex;
   justify-content: center;
@@ -450,7 +449,6 @@ body {
   width: 34%;
 }
 
-/* ФОТОГРАФИИ БОЛЬШЕ, КАЖДАЯ В СВОЕЙ СТРОКЕ */
 .schedule-icon {
   width: 120px;
   height: 120px;
@@ -527,7 +525,7 @@ body {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* === МЕСТО ПРОВЕДЕНИЯ - ФОТО И КАРТА БОЛЬШЕ, В ОДНОЙ СТРОКЕ === */
+/* === МЕСТО ПРОВЕДЕНИЯ - ФОТО И КАРТА В ОДНОЙ СТРОКЕ === */
 .place-block-container {
   max-width: 1100px;
   width: 100%;
@@ -742,7 +740,7 @@ body {
 .confirm-yes { background: #4CAF50; color: white; }
 .confirm-no { background: #f44336; color: white; }
 
-/* === МОБИЛЬНАЯ АДАПТАЦИЯ === */
+/* === МОБИЛЬНАЯ АДАПТАЦИЯ - УВЕЛИЧЕННЫЕ ЗНАЧЕНИЯ === */
 @media (max-width: 768px) {
   .block {
     padding: 0.5rem;
@@ -766,34 +764,35 @@ body {
     max-width: 95%;
   }
   
+  /* УВЕЛИЧЕННЫЙ ШРИФТ НА МОБИЛЬНЫХ */
   .photo-text-overlay h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     letter-spacing: 2px;
   }
   
   .photo-text-overlay .date-large {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
   
-  /* Таймер на мобильных */
+  /* Таймер на мобильных - УВЕЛИЧЕН */
   .countdown-container {
-    gap: 0.8rem;
+    gap: 1rem;
   }
   
   .countdown-item {
-    min-width: 70px;
-    padding: 0.5rem;
+    min-width: 85px;
+    padding: 0.7rem;
   }
   
   .countdown-number {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
   }
   
   .countdown-label {
-    font-size: 0.8rem;
+    font-size: 0.95rem;
   }
   
-  /* Расписание на мобильных - иконки крупнее, в своих строках */
+  /* Расписание на мобильных - иконки УВЕЛИЧЕНЫ */
   .schedule-container {
     flex-direction: row;
     padding: 1rem;
@@ -808,42 +807,42 @@ body {
   
   .schedule-right {
     flex: 1;
-    gap: 0.8rem;
+    gap: 1rem;
     width: 40%;
   }
   
   .schedule-icon {
-    width: 85px;
-    height: 85px;
-    margin: 0.3rem 0;
+    width: 100px;
+    height: 100px;
+    margin: 0.5rem 0;
   }
   
   .schedule-time {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   
   .schedule-description {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   
   .schedule-details {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
   }
   
-  /* Место проведения - фото и карта в строке, чуть меньше */
+  /* Место проведения - фото и карта УВЕЛИЧЕНЫ */
   .place-content {
     flex-direction: row;
-    gap: 0.8rem;
+    gap: 1rem;
   }
   
   .place-image-frame,
   .map-image {
-    max-width: 180px;
+    max-width: 200px;
   }
   
   .color-circle {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
   }
   
   .gift-option {
@@ -852,96 +851,110 @@ body {
   }
   
   .gift-number {
-    min-width: 24px;
-    height: 24px;
-    font-size: 0.8rem;
+    min-width: 28px;
+    height: 28px;
+    font-size: 0.9rem;
   }
 }
 
 @media (max-width: 480px) {
+  /* УВЕЛИЧЕННЫЙ ШРИФТ НА МАЛЕНЬКИХ ТЕЛЕФОНАХ */
+  .photo-text-overlay h1 {
+    font-size: 1.9rem;
+  }
+  
+  .photo-text-overlay .date-large {
+    font-size: 1.3rem;
+  }
+  
+  /* Таймер */
+  .countdown-item {
+    min-width: 75px;
+    padding: 0.6rem;
+  }
+  
+  .countdown-number {
+    font-size: 1.9rem;
+  }
+  
+  .countdown-label {
+    font-size: 0.85rem;
+  }
+  
+  /* Иконки расписания */
   .schedule-icon {
-    width: 70px;
-    height: 70px;
+    width: 85px;
+    height: 85px;
   }
   
   .schedule-time {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   
   .schedule-description {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   
   .schedule-details {
-    font-size: 0.7rem;
+    font-size: 0.75rem;
   }
   
+  /* Место проведения */
   .place-image-frame,
   .map-image {
-    max-width: 140px;
+    max-width: 160px;
   }
   
   .color-circle {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
   }
   
   .couple-photo {
-    height: 180px;
+    height: 200px;
   }
   
   .contact-name {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   
   .contact-phone,
   .contact-telegram,
   .contact-vk {
-    font-size: 0.75rem;
-  }
-  
-  .photo-text-overlay h1 {
-    font-size: 1.6rem;
-  }
-  
-  .photo-text-overlay .date-large {
-    font-size: 1.1rem;
-  }
-  
-  .countdown-item {
-    min-width: 60px;
-  }
-  
-  .countdown-number {
-    font-size: 1.5rem;
-  }
-  
-  .countdown-label {
-    font-size: 0.7rem;
+    font-size: 0.85rem;
   }
 }
 
 /* Для очень маленьких экранов */
 @media (max-width: 380px) {
+  .photo-text-overlay h1 {
+    font-size: 1.7rem;
+  }
+  
+  .photo-text-overlay .date-large {
+    font-size: 1.2rem;
+  }
+  
+  .countdown-item {
+    min-width: 68px;
+    padding: 0.5rem;
+  }
+  
+  .countdown-number {
+    font-size: 1.7rem;
+  }
+  
+  .countdown-label {
+    font-size: 0.8rem;
+  }
+  
   .schedule-icon {
-    width: 60px;
-    height: 60px;
+    width: 75px;
+    height: 75px;
   }
   
   .place-image-frame,
   .map-image {
-    max-width: 115px;
-  }
-  
-  .photo-text-overlay h1 {
-    font-size: 1.4rem;
-  }
-  
-  .countdown-item {
-    min-width: 52px;
-  }
-  
-  .countdown-number {
-    font-size: 1.3rem;
+    max-width: 140px;
   }
 }
