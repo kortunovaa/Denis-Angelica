@@ -575,6 +575,10 @@ h1 {
 }
 
 /* === ДРЕСС-КОД === */
+.dresscode-block {
+  background: white !important;
+}
+
 .dresscode-container {
   display: flex;
   flex-direction: column;
@@ -597,24 +601,39 @@ h1 {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.color-1 { background-color: #d4af37; }
-.color-2 { background-color: #8b4513; }
-.color-3 { background-color: #f5f5dc; }
-.color-4 { background-color: #c0a080; }
+/* Новые цвета */
+.color-1 { background-color: #FFE5E4; }
+.color-2 { background-color: #EFBFBB; }
+.color-3 { background-color: #B08A81; }
+.color-4 { background-color: #8D8E7C; }
+.color-5 { background-color: #666956; }
 
 .dresscode-text {
   font-size: clamp(0.95rem, 3vw, 1.1rem);
   line-height: 1.5;
+  color: #4a4a4a;
+}
+
+.dresscode-photo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
 }
 
 .dresscode-photo {
-  width: 100%;
-  height: 200px;
-  background-image: url('https://i.pinimg.com/736x/ba/f8/fa/baf8fad2c03fa2fe0ca78cf99ce7188c.jpg');
-  background-size: cover;
-  background-position: center;
+  max-width: 100%;
+  height: auto;
   border-radius: 16px;
-  margin-top: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+  .dresscode-photo {
+    width: 100%;
+  }
 }
 
 /* === БЛОК МЕСТА ПРОВЕДЕНИЯ === */
@@ -1149,4 +1168,29 @@ h1 {
     align-items: flex-start;
     gap: 0.5rem;
   }
+}
+/* Дополнительные стили для анкеты */
+.required-star {
+  color: #d45e6c;
+  margin-left: 2px;
+}
+
+.allergy-text-input {
+  margin-top: 0.8rem;
+  transition: all 0.3s ease;
+}
+
+.form-radio-group.allergy-group {
+  margin-bottom: 0.5rem;
+}
+
+/* Стили для сообщения об успешной отправке */
+.form-success {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(76, 175, 80, 0.1);
+  border-radius: 16px;
+  color: #4CAF50;
+  font-size: 1.2rem;
+  border: 1px solid #4CAF50;
 }
