@@ -1,361 +1,387 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"
-  />
-  <title>Денис & Анжелика — Свадебное приглашение</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <!-- 1. Общее фото с датой -->
-  <div class="block first-block">
-    <div class="first-block-photo"></div>
-    <div class="block__content first-block-content fade-on-scroll">
-      <h1>ДЕНИС <span class="ampersand">&</span> АНЖЕЛИКА</h1>
-      <div class="date-large">21|08|2026</div>
-    </div>
-  </div>
-
-  <!-- Все остальные блоки на общем фоне -->
-  <div class="content-container">
-    <!-- 2. Календарь (АВГУСТ 2026) -->
-    <div class="block">
-      <div class="block__content">
-        <h2 class="month-title">АВГУСТ 2026</h2>
-
-        <div class="calendar">
-          <div class="calendar-weekdays">
-            <span>ПН</span><span>ВТ</span><span>СР</span><span>ЧТ</span><span>ПТ</span><span>СБ</span><span>ВС</span>
-          </div>
-          <div class="calendar-days">
-            <!-- Пустые ячейки для августа 2026 (начинается с субботы) -->
-            <span class="calendar-day empty"></span> <!-- ПН -->
-            <span class="calendar-day empty"></span> <!-- ВТ -->
-            <span class="calendar-day empty"></span> <!-- СР -->
-            <span class="calendar-day empty"></span> <!-- ЧТ -->
-            <span class="calendar-day empty"></span> <!-- ПТ -->
-            <span class="calendar-day">1</span> <!-- СБ -->
-            <span class="calendar-day">2</span> <!-- ВС -->
-            
-            <span class="calendar-day">3</span>
-            <span class="calendar-day">4</span>
-            <span class="calendar-day">5</span>
-            <span class="calendar-day">6</span>
-            <span class="calendar-day">7</span>
-            <span class="calendar-day">8</span>
-            <span class="calendar-day">9</span>
-            
-            <span class="calendar-day">10</span>
-            <span class="calendar-day">11</span>
-            <span class="calendar-day">12</span>
-            <span class="calendar-day">13</span>
-            <span class="calendar-day">14</span>
-            <span class="calendar-day">15</span>
-            <span class="calendar-day">16</span>
-            
-            <span class="calendar-day">17</span>
-            <span class="calendar-day">18</span>
-            <span class="calendar-day">19</span>
-            <span class="calendar-day">20</span>
-            <span class="calendar-day highlight big-number">21</span>
-            <span class="calendar-day">22</span>
-            <span class="calendar-day">23</span>
-            
-            <span class="calendar-day">24</span>
-            <span class="calendar-day">25</span>
-            <span class="calendar-day">26</span>
-            <span class="calendar-day">27</span>
-            <span class="calendar-day">28</span>
-            <span class="calendar-day">29</span>
-            <span class="calendar-day">30</span>
-            
-            <span class="calendar-day">31</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"
+    />
+    <title>Денис & Анжелика — Свадебное приглашение</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <!-- Первый блок с фото - текст строго по центру, смещен немного ниже -->
+      <div class="block first-block">
+        <div class="first-block-photo">
+          <img
+            src="https://i.pinimg.com/736x/ba/f8/fa/baf8fad2c03fa2fe0ca78cf99ce7188c.jpg"
+            alt="Денис и Анжелика"
+          />
+          <div class="photo-text-overlay">
+            <h1>ДЕНИС <span class="ampersand">&</span> АНЖЕЛИКА</h1>
+            <div class="date-large">21|08|2026</div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- 3. Дорогие гости -->
-    <div class="block">
-      <div class="block__content">
-        <h2 class="invitation-title">ДОРОГИЕ ГОСТИ!</h2>
-        <p class="invitation-text">
-          Этот день станет для нас поистине незабываемым, и мы мечтаем
-          провести его рядом с Вами.
-        </p>
-        <p class="invitation-text">
-          Приглашаем Вас присоединиться к нашей свадьбе и украсить ее своим
-          присутствием!
-        </p>
-      </div>
-    </div>
-
-    <!-- 4. Пожелания по подаркам -->
-    <div class="block">
-      <div class="block__content gifts-content">
-        <h2 class="gifts-title">ПОЖЕЛАНИЯ ПО ПОДАРКАМ</h2>
-        <p class="gifts-text">
-          Ваше присутствие в день нашей свадьбы - самый значимый подарок для нас!
-        </p>
-        <p class="gifts-text">
-          Мы понимаем, что дарить цветы на свадьбу - это традиция, но мы не сможем насладиться их красотой в полной мере... 
-          Мы просим вас воздержаться от покупки цветочных букетов и предлагаем вам несколько вариантов:
-        </p>
-        <div class="gifts-options">
-          <div class="gift-option">
-            <span class="gift-number">1</span>
-            <p class="gift-description">Вы можете оформить цветочную подписку, таким образом невеста на протяжении определенного времени будет получать букеты в подарок</p>
-          </div>
-          <div class="gift-option">
-            <span class="gift-number">2</span>
-            <p class="gift-description">Преподнести бутылку вашего любимого алкоголя, таким образом жених с невестой соберут свадебный бар, который будет приносить наслаждение еще долгое время</p>
-          </div>
-          <div class="gift-option">
-            <span class="gift-number">3</span>
-            <p class="gift-description">Свадебный конверт</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 5. Отсчет дней -->
-    <div class="block">
-      <div class="block__content">
-        <h2 class="month-title">ДО СВАДЬБЫ ОСТАЛОСЬ</h2>
-        <div class="countdown-container" id="countdown">
-          <div class="countdown-item">
-            <div class="countdown-number" id="days">00</div>
-            <div class="countdown-label">Дней</div>
-          </div>
-          <div class="countdown-item">
-            <div class="countdown-number" id="hours">00</div>
-            <div class="countdown-label">Часов</div>
-          </div>
-          <div class="countdown-item">
-            <div class="countdown-number" id="minutes">00</div>
-            <div class="countdown-label">Минут</div>
-          </div>
-          <div class="countdown-item">
-            <div class="countdown-number" id="seconds">00</div>
-            <div class="countdown-label">Секунд</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 6. Расписание дня -->
-    <div class="block schedule-block">
-      <h2 class="schedule-main-title">Расписание дня</h2>
-      <div class="schedule-container">
-        <div class="schedule-left">
-          <div class="schedule-items">
-            <div class="schedule-item">
-              <div class="schedule-time">15:30</div>
-              <div class="schedule-description">Сбор гостей</div>
-              <div class="schedule-details">Встречаемся, наслаждаемся фуршетом, настраиваемся на веселую свадьбу.</div>
+      <!-- 2. Календарь -->
+      <div class="block">
+        <div class="block__content">
+          <h2 class="month-title">АВГУСТ 2026</h2>
+          <div class="calendar">
+            <div class="calendar-weekdays">
+              <span>ПН</span><span>ВТ</span><span>СР</span><span>ЧТ</span
+              ><span>ПТ</span><span>СБ</span><span>ВС</span>
             </div>
-            
-            <div class="schedule-item">
-              <div class="schedule-time">16:00</div>
-              <div class="schedule-description">Церемония</div>
-              <div class="schedule-details">Немного радостных трогательных формальностей.</div>
-            </div>
-            
-            <div class="schedule-item">
-              <div class="schedule-time">17:00</div>
-              <div class="schedule-description">Банкет</div>
-              <div class="schedule-details">Время вкусной еды, музыки, приятных пожеланий и танцев.</div>
-            </div>
-
-            <div class="schedule-item">
-              <div class="schedule-time">23:00</div>
-              <div class="schedule-description">Окончание банкета</div>
-              <div class="schedule-details">Дорогие гости, такси вызовем, всё будет хорошо!</div>
+            <div class="calendar-days">
+              <span class="calendar-day empty"></span>
+              <span class="calendar-day empty"></span>
+              <span class="calendar-day empty"></span>
+              <span class="calendar-day empty"></span>
+              <span class="calendar-day empty"></span>
+              <span class="calendar-day">1</span>
+              <span class="calendar-day">2</span>
+              <span class="calendar-day">3</span>
+              <span class="calendar-day">4</span>
+              <span class="calendar-day">5</span>
+              <span class="calendar-day">6</span>
+              <span class="calendar-day">7</span>
+              <span class="calendar-day">8</span>
+              <span class="calendar-day">9</span>
+              <span class="calendar-day">10</span>
+              <span class="calendar-day">11</span>
+              <span class="calendar-day">12</span>
+              <span class="calendar-day">13</span>
+              <span class="calendar-day">14</span>
+              <span class="calendar-day">15</span>
+              <span class="calendar-day">16</span>
+              <span class="calendar-day">17</span>
+              <span class="calendar-day">18</span>
+              <span class="calendar-day">19</span>
+              <span class="calendar-day">20</span>
+              <span class="calendar-day highlight big-number">21</span>
+              <span class="calendar-day">22</span>
+              <span class="calendar-day">23</span>
+              <span class="calendar-day">24</span>
+              <span class="calendar-day">25</span>
+              <span class="calendar-day">26</span>
+              <span class="calendar-day">27</span>
+              <span class="calendar-day">28</span>
+              <span class="calendar-day">29</span>
+              <span class="calendar-day">30</span>
+              <span class="calendar-day">31</span>
             </div>
           </div>
         </div>
-        
-        <div class="schedule-right">
-          <div class="schedule-icon">
-            <img src="https://avatars.mds.yandex.net/i?id=379de6c0bc75eee53113bfb0cb2fb246_l-5173466-images-thumbs&n=13" alt="Сбор гостей" class="schedule-icon-img">
+      </div>
+
+      <!-- 3. Дорогие гости - изменен цвет фона -->
+      <div class="block">
+        <div class="block__content guests-block">
+          <h2 class="invitation-title">ДОРОГИЕ ГОСТИ!</h2>
+          <p class="invitation-text">
+            Этот день станет для нас поистине незабываемым, и мы мечтаем
+            провести его рядом с Вами.
+          </p>
+          <p class="invitation-text">
+            Приглашаем Вас присоединиться к нашей свадьбе и украсить ее своим
+            присутствием!
+          </p>
+        </div>
+      </div>
+
+      <!-- 4. Пожелания по подаркам -->
+      <div class="block">
+        <div class="block__content gifts-content">
+          <h2 class="gifts-title">ПОЖЕЛАНИЯ ПО ПОДАРКАМ</h2>
+          <p class="gifts-text">
+            Ваше присутствие в день нашей свадьбы - самый значимый подарок для
+            нас!
+          </p>
+          <p class="gifts-text">
+            Мы понимаем, что дарить цветы на свадьбу - это традиция, но мы не
+            сможем насладиться их красотой в полной мере... Мы просим вас
+            воздержаться от покупки цветочных букетов и предлагаем вам несколько
+            вариантов:
+          </p>
+          <div class="gifts-options">
+            <div class="gift-option">
+              <span class="gift-number">1</span>
+              <p class="gift-description">
+                Вы можете оформить цветочную подписку, таким образом невеста на
+                протяжении определенного времени будет получать букеты в подарок
+              </p>
+            </div>
+            <div class="gift-option">
+              <span class="gift-number">2</span>
+              <p class="gift-description">
+                Преподнести бутылку вашего любимого алкоголя, таким образом
+                жених с невестой соберут свадебный бар, который будет приносить
+                наслаждение еще долгое время
+              </p>
+            </div>
+            <div class="gift-option">
+              <span class="gift-number">3</span>
+              <p class="gift-description">Свадебный конверт</p>
+            </div>
           </div>
-          <div class="schedule-icon">
-            <img src="https://i.pinimg.com/1200x/ae/94/49/ae944919d8c042169a08dc0fdba24e3c.jpg" alt="Церемония" class="schedule-icon-img">
+        </div>
+      </div>
+
+      <!-- 5. Отсчет дней -->
+      <div class="block">
+        <div class="block__content">
+          <h2 class="month-title">ДО СВАДЬБЫ ОСТАЛОСЬ</h2>
+          <div class="countdown-container" id="countdown">
+            <div class="countdown-item">
+              <div class="countdown-number" id="days">00</div>
+              <div class="countdown-label">Дней</div>
+            </div>
+            <div class="countdown-item">
+              <div class="countdown-number" id="hours">00</div>
+              <div class="countdown-label">Часов</div>
+            </div>
+            <div class="countdown-item">
+              <div class="countdown-number" id="minutes">00</div>
+              <div class="countdown-label">Минут</div>
+            </div>
+            <div class="countdown-item">
+              <div class="countdown-number" id="seconds">00</div>
+              <div class="countdown-label">Секунд</div>
+            </div>
           </div>
-          <div class="schedule-icon">
-            <img src="https://i.pinimg.com/1200x/9d/4d/6b/9d4d6bffe762e85d282f4e96eac5b911.jpg" alt="Банкет" class="schedule-icon-img">
+        </div>
+      </div>
+
+      <!-- 6. Расписание дня -->
+      <div class="block schedule-block">
+        <h2 class="schedule-main-title">Расписание дня</h2>
+        <div class="schedule-container">
+          <div class="schedule-left">
+            <div class="schedule-items">
+              <div class="schedule-item">
+                <div class="schedule-time">15:30</div>
+                <div class="schedule-description">Сбор гостей</div>
+                <div class="schedule-details">
+                  Встречаемся, наслаждаемся фуршетом, настраиваемся на веселую
+                  свадьбу.
+                </div>
+              </div>
+              <div class="schedule-item">
+                <div class="schedule-time">16:00</div>
+                <div class="schedule-description">Церемония</div>
+                <div class="schedule-details">
+                  Немного радостных трогательных формальностей.
+                </div>
+              </div>
+              <div class="schedule-item">
+                <div class="schedule-time">17:00</div>
+                <div class="schedule-description">Банкет</div>
+                <div class="schedule-details">
+                  Время вкусной еды, музыки, приятных пожеланий и танцев.
+                </div>
+              </div>
+              <div class="schedule-item">
+                <div class="schedule-time">23:00</div>
+                <div class="schedule-description">Окончание банкета</div>
+                <div class="schedule-details">
+                  Дорогие гости, такси вызовем, всё будет хорошо!
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="schedule-icon">
-            <img src="https://i.pinimg.com/736x/b8/c0/bf/b8c0bf45e2087d447e9734a07870de90.jpg" alt="Окончание" class="schedule-icon-img">
+          <div class="schedule-right">
+            <div class="schedule-icon">
+              <img
+                src="https://avatars.mds.yandex.net/i?id=379de6c0bc75eee53113bfb0cb2fb246_l-5173466-images-thumbs&n=13"
+                alt="Сбор гостей"
+                class="schedule-icon-img"
+              />
+            </div>
+            <div class="schedule-icon">
+              <img
+                src="https://i.pinimg.com/1200x/ae/94/49/ae944919d8c042169a08dc0fdba24e3c.jpg"
+                alt="Церемония"
+                class="schedule-icon-img"
+              />
+            </div>
+            <div class="schedule-icon">
+              <img
+                src="https://i.pinimg.com/1200x/9d/4d/6b/9d4d6bffe762e85d282f4e96eac5b911.jpg"
+                alt="Банкет"
+                class="schedule-icon-img"
+              />
+            </div>
+            <div class="schedule-icon">
+              <img
+                src="https://i.pinimg.com/736x/b8/c0/bf/b8c0bf45e2087d447e9734a07870de90.jpg"
+                alt="Окончание"
+                class="schedule-icon-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7. Дресс код -->
+      <div class="block">
+        <div class="block__content dresscode-block">
+          <h2 class="place-title">ДРЕСС-КОД</h2>
+          <div class="dresscode-container">
+            <div class="dresscode-colors">
+              <div class="color-circle color-1"></div>
+              <div class="color-circle color-2"></div>
+              <div class="color-circle color-3"></div>
+              <div class="color-circle color-4"></div>
+              <div class="color-circle color-5"></div>
+            </div>
+            <p class="dresscode-text">
+              Поддержите цветовую гамму нашей свадьбы! Приветствуются нежные,
+              природные оттенки в ваших нарядах.
+            </p>
+            <div class="dresscode-photo-container">
+              <img
+                src="https://sun9-11.userapi.com/s/v1/ig2/CK6w_LWuJdLXc8Vq8FJzeChjGgiQAA9_CyBMS9d3MeAY2PMkKmQFrPRdaNHjF7impzSFT9Q5F8tGsqVxT1Hk11ch.jpg?quality=95&as=32x57,48x85,72x128,108x192,160x284,240x427,360x640,480x853,540x960,640x1138,720x1280,1080x1920,1152x2048&from=bu&u=P9KSOKFJ4OANtu9VoZ_dLZda2iIks4jRrf_QLav1mWc&cs=640x0"
+                alt="Дресс-код пример"
+                class="dresscode-photo"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8. Место проведения -->
+      <div class="block">
+        <div class="place-block-container">
+          <h2 class="place-title">Место проведения</h2>
+          <div class="place-content">
+            <div class="place-image-wrapper">
+              <div class="place-image-frame"></div>
+            </div>
+            <div class="map-wrapper">
+              <a
+                href="https://yandex.ru/maps/?ll=50.164527%2C53.230624&z=15&text=г.Самара%20Загородный%20парк"
+                target="_blank"
+                class="map-link"
+                ><div class="map-image"></div
+              ></a>
+              <p class="map-note">
+                Нажмите на карту, чтобы открыть в Яндекс.Картах
+              </p>
+            </div>
+          </div>
+          <div class="place-info">
+            <p class="place-address-title">г. Самара, Загородный парк</p>
+            <p class="place-address">ул. Центральная, 21А, д. Высоково</p>
+            <p class="place-parking">
+              Вы можете приехать на своем автомобиле, есть парковочные места
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9. Контакты -->
+      <div class="block">
+        <div class="block__content">
+          <h2 class="gifts-title">КОНТАКТЫ</h2>
+          <div class="contacts-container">
+            <div class="contact-card">
+              <div class="contact-name">Анжелика (невеста)</div>
+              <a href="tel:+79991234567" class="contact-phone">
+                +7 (999) 123-45-67</a
+              ><a href="#" class="contact-telegram" target="_blank"
+                >💬 Telegram</a
+              ><a href="#" class="contact-vk" target="_blank">📱 VK</a>
+            </div>
+            <div class="contact-card">
+              <div class="contact-name">Организатор Алина</div>
+              <a href="tel:+79987654321" class="contact-phone">
+                +7 (998) 765-43-21</a
+              ><a href="#" class="contact-telegram" target="_blank"
+                >💬 Telegram</a
+              ><a
+                href="https://vk.com/lina_kn"
+                class="contact-vk"
+                target="_blank"
+                >📱 VK</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 10. Анкета гостя -->
+      <div class="block">
+        <div class="block__content">
+          <h2 class="gifts-title">АНКЕТА ГОСТЯ</h2>
+          <div class="form-container">
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLSfovqV_GNRl7HoxP6OjmUH3iI6AWzmGOZvaOProtgV2-5iRHw/viewform?embedded=true"
+              width="100%"
+              height="1500"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0"
+              >Загрузка анкеты...</iframe
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- 11. Фото жениха и невесты -->
+      <div class="block">
+        <div class="block__content">
+          <h2 class="gifts-title">ЖЕНИХ И НЕВЕСТА</h2>
+          <div class="couple-photo-grid">
+            <div class="couple-photo photo-1"></div>
+            <div class="couple-photo photo-2"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 12. Подтверждение -->
+      <div class="block">
+        <div class="block__content">
+          <h2 class="gifts-title">ПОДТВЕРЖДЕНИЕ</h2>
+          <p class="invitation-text">
+            Пожалуйста, сообщите, сможете ли Вы присутствовать
+          </p>
+          <div class="confirmation-buttons">
+            <button class="confirm-btn confirm-yes">✅ Буду</button
+            ><button class="confirm-btn confirm-no">❌ Не смогу</button
+            >
           </div>
         </div>
       </div>
     </div>
 
-    <!-- 7. Дресс код -->
-<div class="block">
-  <div class="block__content dresscode-block">
-    <h2 class="place-title">ДРЕСС-КОД</h2>
-    <div class="dresscode-container">
-      <div class="dresscode-colors">
-        <div class="color-circle color-1"></div>
-        <div class="color-circle color-2"></div>
-        <div class="color-circle color-3"></div>
-        <div class="color-circle color-4"></div>
-        <div class="color-circle color-5"></div>
-      </div>
-      <p class="dresscode-text">
-        Поддержите цветовую гамму нашей свадьбы! Приветствуются нежные, природные оттенки в ваших нарядах.
-      </p>
-      <div class="dresscode-photo-container">
-        <img src="https://sun9-52.userapi.com/s/v1/ig2/coVzXkicio4NBr1-peYUov2qz803ejItmNfjxvUmvnUL8vb_oxDZX1GH7mRmSQF5n0D2fJyiq9FdLOBSeE3KdjhY.jpg?quality=95&as=32x57,48x85,72x128,108x192,160x284,240x427,360x640,480x853,540x960,640x1138,720x1280,1080x1920,1152x2048&from=bu&cs=1152x0" alt="Дресс-код пример" class="dresscode-photo">
-      </div>
-    </div>
-  </div>
-</div>
-
-    <!-- 8. Место проведения -->
-    <div class="block">
-      <div class="place-block-container">
-        <h2 class="place-title">Место проведения</h2>
-        
-        <div class="place-content">
-          <div class="place-image-wrapper">
-            <div class="place-image-frame"></div>
-          </div>
-          
-          <div class="map-wrapper">
-            <a href="https://yandex.ru/maps/?ll=50.164527%2C53.230624&z=15&text=г.Самара%20Загородный%20парк" target="_blank" class="map-link">
-              <div class="map-image"></div>
-            </a>
-            <p class="map-note">Нажмите на карту, чтобы открыть в Яндекс.Картах</p>
-          </div>
-        </div>
-        
-        <div class="place-info">
-          <p class="place-address-title">г. Самара, Загородный парк</p>
-          <p class="place-address">ул. Центральная, 21А, д. Высоково</p>
-          <p class="place-parking">Вы можете приехать на своем автомобиле, есть парковочные места</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- 9. Контакты (невеста и Алина) -->
-    <div class="block">
-      <div class="block__content">
-        <h2 class="gifts-title">КОНТАКТЫ</h2>
-        <div class="contacts-container">
-          <div class="contact-card">
-            <div class="contact-name">Анжелика (невеста)</div>
-            <a href="tel:+79991234567" class="contact-phone">+7 (999) 123-45-67</a>
-            <a href="https://wa.me/79991234567" class="contact-whatsapp" target="_blank">WhatsApp</a>
-          </div>
-          <div class="contact-card">
-            <div class="contact-name">Алина</div>
-            <a href="tel:+79987654321" class="contact-phone">+7 (998) 765-43-21</a>
-            <a href="https://wa.me/79987654321" class="contact-whatsapp" target="_blank">WhatsApp</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  <!-- 10. Анкета гостя -->
-<div class="block">
-  <div class="block__content">
-    <h2 class="gifts-title">АНКЕТА ГОСТЯ</h2>
-    <div class="form-container">
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfovqV_GNRl7HoxP6OjmUH3iI6AWzmGOZvaOProtgV2-5iRHw/viewform?embedded=true" width="100%" height="1500" frameborder="0" marginheight="0" marginwidth="0">
-        Загрузка анкеты...
-      </iframe>
-    </div>
-  </div>
-</div>
-
-    <!-- 11. Фото жениха и невесты -->
-    <div class="block">
-      <div class="block__content">
-        <h2 class="gifts-title">ЖЕНИХ И НЕВЕСТА</h2>
-        <div class="couple-photo-grid">
-          <div class="couple-photo photo-1"></div>
-          <div class="couple-photo photo-2"></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 12. Подтверждение -->
-    <div class="block">
-      <div class="block__content">
-        <h2 class="gifts-title">ПОДТВЕРЖДЕНИЕ</h2>
-        <p class="invitation-text">Пожалуйста, сообщите, сможете ли Вы присутствовать</p>
-        <div class="confirmation-buttons">
-          <button class="confirm-btn confirm-yes">✅ Буду</button>
-          <button class="confirm-btn confirm-no">❌ Не смогу</button>
-          <button class="confirm-btn confirm-maybe">❓ Пока не знаю</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script>
-    // Таймер обратного отсчета
-    function updateCountdown() {
-      const weddingDate = new Date('August 21, 2026 15:30:00').getTime();
-      const now = new Date().getTime();
-      const distance = weddingDate - now;
-      
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      
-      document.getElementById('days').innerHTML = days.toString().padStart(2, '0');
-      document.getElementById('hours').innerHTML = hours.toString().padStart(2, '0');
-      document.getElementById('minutes').innerHTML = minutes.toString().padStart(2, '0');
-      document.getElementById('seconds').innerHTML = seconds.toString().padStart(2, '0');
-    }
-    
-    updateCountdown();
-    setInterval(updateCountdown, 1000);
-  </script>
-  <script>
-  // Показывать/скрывать поля для аллергий
-  document.querySelectorAll('.allergy-radio').forEach(radio => {
-    radio.addEventListener('change', function() {
-      const targetId = this.getAttribute('data-target');
-      const textInput = document.getElementById(targetId);
-      
-      if (this.value === 'yes') {
-        textInput.style.display = 'block';
-        textInput.required = true;
-      } else {
-        textInput.style.display = 'none';
-        textInput.required = false;
-        textInput.value = ''; // очищаем поле
+    <script>
+      function updateCountdown() {
+        const weddingDate = new Date("August 21, 2026 15:30:00").getTime();
+        const now = new Date().getTime();
+        const distance = weddingDate - now;
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
+        );
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        document.getElementById("days").innerHTML = days
+          .toString()
+          .padStart(2, "0");
+        document.getElementById("hours").innerHTML = hours
+          .toString()
+          .padStart(2, "0");
+        document.getElementById("minutes").innerHTML = minutes
+          .toString()
+          .padStart(2, "0");
+        document.getElementById("seconds").innerHTML = seconds
+          .toString()
+          .padStart(2, "0");
       }
-    });
-  });
-
-  // Обработка отправки формы
-  document.querySelector('.survey-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    // Здесь можно собрать данные и отправить их куда-то
-    // Например, в Telegram или на email
-    
-    // Показываем сообщение об успехе
-    const formContent = this.innerHTML;
-    this.innerHTML = '<div class="form-success">✓ Спасибо! Ваши ответы отправлены.</div>';
-    
-    // Восстанавливаем форму через 3 секунды (для демонстрации)
-    setTimeout(() => {
-      this.innerHTML = formContent;
-      // Нужно переинициализировать обработчики событий
-      location.reload(); // простой способ - перезагрузить страницу
-    }, 3000);
-  });
-</script>
-</body>
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
+    </script>
+  </body>
 </html>
