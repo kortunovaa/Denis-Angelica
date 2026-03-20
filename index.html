@@ -195,26 +195,27 @@
       </div>
     </div>
 
-    <!-- 7. Дресс код + фото -->
-    <div class="block">
-      <div class="block__content">
-        <h2 class="place-title">ДРЕСС-КОД</h2>
-        <div class="dresscode-container">
-          <div class="dresscode-colors">
-            <div class="color-circle color-1"></div>
-            <div class="color-circle color-2"></div>
-            <div class="color-circle color-3"></div>
-            <div class="color-circle color-4"></div>
-          </div>
-          <p class="dresscode-text">
-            Поддержите цветовую гамму нашей свадьбы! Приветствуются золотые, коричневые, бежевые и песочные оттенки в ваших нарядах.
-          </p>
-          <div class="dresscode-photo">
-            <!-- Здесь будет фото для дресс-кода -->
-          </div>
-        </div>
+    <!-- 7. Дресс код -->
+<div class="block">
+  <div class="block__content dresscode-block">
+    <h2 class="place-title">ДРЕСС-КОД</h2>
+    <div class="dresscode-container">
+      <div class="dresscode-colors">
+        <div class="color-circle color-1"></div>
+        <div class="color-circle color-2"></div>
+        <div class="color-circle color-3"></div>
+        <div class="color-circle color-4"></div>
+        <div class="color-circle color-5"></div>
+      </div>
+      <p class="dresscode-text">
+        Поддержите цветовую гамму нашей свадьбы! Приветствуются нежные, природные оттенки в ваших нарядах.
+      </p>
+      <div class="dresscode-photo-container">
+        <img src="https://sun9-52.userapi.com/s/v1/ig2/coVzXkicio4NBr1-peYUov2qz803ejItmNfjxvUmvnUL8vb_oxDZX1GH7mRmSQF5n0D2fJyiq9FdLOBSeE3KdjhY.jpg?quality=95&as=32x57,48x85,72x128,108x192,160x284,240x427,360x640,480x853,540x960,640x1138,720x1280,1080x1920,1152x2048&from=bu&cs=1152x0" alt="Дресс-код пример" class="dresscode-photo">
       </div>
     </div>
+  </div>
+</div>
 
     <!-- 8. Место проведения -->
     <div class="block">
@@ -261,50 +262,17 @@
       </div>
     </div>
 
-    <!-- 10. Анкета гостя -->
-    <div class="block">
-      <div class="block__content">
-        <h2 class="gifts-title">АНКЕТА ГОСТЯ</h2>
-        <form class="survey-form">
-          <div class="form-group">
-            <label class="form-label">Ваше имя</label>
-            <input type="text" class="form-input" placeholder="Как к Вам обращаться?">
-          </div>
-          
-          <div class="form-group">
-            <label class="form-label">Будете ли Вы на свадьбе?</label>
-            <div class="form-radio-group">
-              <label class="form-radio">
-                <input type="radio" name="attendance"> Да
-              </label>
-              <label class="form-radio">
-                <input type="radio" name="attendance"> Нет
-              </label>
-              <label class="form-radio">
-                <input type="radio" name="attendance"> Пока не знаю
-              </label>
-            </div>
-          </div>
-          
-          <div class="form-group">
-            <label class="form-label">Количество гостей</label>
-            <select class="form-select">
-              <option>1 человек</option>
-              <option>2 человека</option>
-              <option>3 человека</option>
-              <option>4+ человек</option>
-            </select>
-          </div>
-          
-          <div class="form-group">
-            <label class="form-label">Пожелания по меню</label>
-            <input type="text" class="form-input" placeholder="Аллергии, предпочтения...">
-          </div>
-          
-          <button type="submit" class="form-submit">Отправить</button>
-        </form>
-      </div>
+  <!-- 10. Анкета гостя -->
+<div class="block">
+  <div class="block__content">
+    <h2 class="gifts-title">АНКЕТА ГОСТЯ</h2>
+    <div class="form-container">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfovqV_GNRl7HoxP6OjmUH3iI6AWzmGOZvaOProtgV2-5iRHw/viewform?embedded=true" width="100%" height="1500" frameborder="0" marginheight="0" marginwidth="0">
+        Загрузка анкеты...
+      </iframe>
     </div>
+  </div>
+</div>
 
     <!-- 11. Фото жениха и невесты -->
     <div class="block">
@@ -352,5 +320,42 @@
     updateCountdown();
     setInterval(updateCountdown, 1000);
   </script>
+  <script>
+  // Показывать/скрывать поля для аллергий
+  document.querySelectorAll('.allergy-radio').forEach(radio => {
+    radio.addEventListener('change', function() {
+      const targetId = this.getAttribute('data-target');
+      const textInput = document.getElementById(targetId);
+      
+      if (this.value === 'yes') {
+        textInput.style.display = 'block';
+        textInput.required = true;
+      } else {
+        textInput.style.display = 'none';
+        textInput.required = false;
+        textInput.value = ''; // очищаем поле
+      }
+    });
+  });
+
+  // Обработка отправки формы
+  document.querySelector('.survey-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Здесь можно собрать данные и отправить их куда-то
+    // Например, в Telegram или на email
+    
+    // Показываем сообщение об успехе
+    const formContent = this.innerHTML;
+    this.innerHTML = '<div class="form-success">✓ Спасибо! Ваши ответы отправлены.</div>';
+    
+    // Восстанавливаем форму через 3 секунды (для демонстрации)
+    setTimeout(() => {
+      this.innerHTML = formContent;
+      // Нужно переинициализировать обработчики событий
+      location.reload(); // простой способ - перезагрузить страницу
+    }, 3000);
+  });
+</script>
 </body>
 </html>
